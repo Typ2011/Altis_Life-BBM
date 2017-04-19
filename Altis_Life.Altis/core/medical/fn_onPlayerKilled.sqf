@@ -30,7 +30,7 @@ _unit setVariable ["steam64id",(getPlayerUID player),true]; //Set the UID.
 
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
-showCinemaBorder true;
+showCinemaBorder false;
 life_deathCamera cameraEffect ["Internal","Back"];
 createDialog "DeathScreen";
 life_deathCamera camSetTarget _unit;

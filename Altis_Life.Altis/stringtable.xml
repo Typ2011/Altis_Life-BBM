@@ -7890,17 +7890,9 @@
             <Portuguese>%1 requisitou o resgate do SAMU</Portuguese>
             <Polish>%1 prosi o pomoc medyczną.</Polish>
         </Key>
-        <Key ID="STR_Medic_Respawn">
-            <Original>Respawn Available in: %1</Original>
-            <Czech>Respawn K dispozici v:%1</Czech>
-            <Spanish>Puedes reaparecer en: %1</Spanish>
-            <Russian></Russian>
-            <French>Réapparition disponible dans: %1</French>
-            <German>Aufwachen verfügbar in: %1</German>
-            <Italian>Respawn disponibile in: %1</Italian>
-            <Portuguese>Respawn Disponível em: %1</Portuguese>
-            <Polish>Odrodzenie możliwe za: %1</Polish>
-        </Key>
+			<Key ID="STR_Medic_Respawn">
+			<Original>Lebenserwartungen %1</Original>
+		</Key>
         <Key ID="STR_Medic_Respawn_2">
             <Original>You can now respawn</Original>
             <Czech>Nyní lze respawn</Czech>
