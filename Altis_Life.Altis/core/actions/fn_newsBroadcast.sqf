@@ -37,3 +37,4 @@ if (isNil "life_broadcastTimer" || {(time - life_broadcastTimer) > _msgCooldown}
 };
 
 CONTROL(100100,100103) ctrlSetStructuredText parseText format [ localize "STR_News_StructuredText",[_msgCost] call life_fnc_numberText,_broadcastDelay];
+[] call life_fnc_hudUpdate; //Request update of hud.

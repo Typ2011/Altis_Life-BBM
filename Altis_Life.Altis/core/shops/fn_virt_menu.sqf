@@ -36,3 +36,4 @@ if !([_conditions] call life_fnc_levelCheck) exitWith {hint localize "STR_Shop_V
 createDialog "shops_menu";
 
 [] call life_fnc_virt_update;
+[] call life_fnc_hudUpdate; //Request update of hud.

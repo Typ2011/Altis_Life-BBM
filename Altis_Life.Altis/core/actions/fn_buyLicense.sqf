@@ -24,3 +24,4 @@ titleText[format [localize "STR_NOTF_B_1", localize _displayName,[_price] call l
 missionNamespace setVariable [_varName,true];
 
 [2] call SOCK_fnc_updatePartial;
+[] call life_fnc_hudUpdate; //Request update of hud.

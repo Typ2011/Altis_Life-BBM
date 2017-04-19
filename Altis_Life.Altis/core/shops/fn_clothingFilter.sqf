@@ -91,3 +91,4 @@ private "_details";
     true
 
 } count _configArray;
+[] call life_fnc_hudUpdate; //Request update of hud.

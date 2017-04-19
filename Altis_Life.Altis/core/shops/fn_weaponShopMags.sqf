@@ -17,3 +17,4 @@ if ((uiNamespace getVariable ["Weapon_Magazine",0]) isEqualTo 0) then {
 } else {
     uiNamespace setVariable ["Weapon_Magazine",0];
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

@@ -16,3 +16,4 @@ if (isNull _cop || {!(_cop isEqualTo player)}) exitWith {}; //Double NO
 
 BANK = BANK + _value;
 [1] call SOCK_fnc_updatePartial;
+[] call life_fnc_hudUpdate;

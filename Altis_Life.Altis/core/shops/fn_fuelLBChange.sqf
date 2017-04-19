@@ -41,3 +41,4 @@ ctrlShow [20330,true];
 
 ctrlSetText [20323,format ["Total : %1$",life_fuelPrices * ((SliderPosition 20901) -(floor(_fuel * _fueltank))) ]];
 true;
+[] call life_fnc_hudUpdate; //Request update of hud.

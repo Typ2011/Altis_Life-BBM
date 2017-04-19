@@ -47,3 +47,4 @@ _filters lbAdd localize "STR_Shop_Weapon_ShopInv";
 _filters lbAdd localize "STR_Shop_Weapon_YourInv";
 
 _filters lbSetCurSel 0;
+[] call life_fnc_hudUpdate; //Request update of hud.

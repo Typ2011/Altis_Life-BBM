@@ -35,4 +35,7 @@ if (_evaluation isEqualType true) then {
     _return = true;
 };
 
+[] call life_fnc_hudUpdate; //Request update of hud.
+
 _return;
+

@@ -41,3 +41,4 @@ if (isNil {(group player getVariable "gang_bank")}) then {
     (CONTROL(2700,2705)) ctrlEnable false;
     (CONTROL(2700,2706)) ctrlEnable false;
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

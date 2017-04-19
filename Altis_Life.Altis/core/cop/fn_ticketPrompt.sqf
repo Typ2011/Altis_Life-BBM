@@ -29,3 +29,4 @@ CONTROL(2600,2601) ctrlSetStructuredText parseText format ["<t align='center'><t
         [1,"STR_Cop_Ticket_Refuse",true,[profileName]] remoteExecCall ["life_fnc_broadcast",life_ticket_cop];
     };
 };
+[] call life_fnc_hudUpdate;

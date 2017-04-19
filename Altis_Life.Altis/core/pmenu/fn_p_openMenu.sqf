@@ -30,3 +30,4 @@ if (FETCH_CONST(life_adminlevel) < 1) then {
 };
 
 [] call life_fnc_p_updateMenu;
+[] call life_fnc_hudUpdate; //Request update of hud.

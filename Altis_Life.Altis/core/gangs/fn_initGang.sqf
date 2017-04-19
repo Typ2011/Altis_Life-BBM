@@ -41,3 +41,4 @@ if (!isNil "_group") then {
     _group setVariable ["gang_bank",(life_gangData select 4),true];
     _group setVariable ["gang_members",(life_gangData select 5),true];
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

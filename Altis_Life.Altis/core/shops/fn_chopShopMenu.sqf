@@ -45,3 +45,4 @@ _control = CONTROL(39400,39402);
         };
     };
 } forEach _nearVehicles;
+[] call life_fnc_hudUpdate; //Request update of hud.

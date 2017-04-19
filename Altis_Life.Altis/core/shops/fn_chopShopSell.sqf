@@ -38,3 +38,4 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
 };
 
 closeDialog 0;
+[] call life_fnc_hudUpdate; //Request update of hud.

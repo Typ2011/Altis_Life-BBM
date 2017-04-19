@@ -40,3 +40,4 @@ if (_action) then {
 } else {
     hint localize "STR_GNOTF_UpgradeCancel";
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

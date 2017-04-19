@@ -34,4 +34,6 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
         advanced_log = format [localize "STR_DL_AL_Arrested",profileName,(getPlayerUID player),_unit getVariable ["realname",name _unit]];
     };
     publicVariableServer "advanced_log";
+	
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

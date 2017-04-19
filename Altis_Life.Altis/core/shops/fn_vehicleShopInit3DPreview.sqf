@@ -60,3 +60,4 @@ life_preview_3D_vehicle_object = objNull;
         };
     };
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

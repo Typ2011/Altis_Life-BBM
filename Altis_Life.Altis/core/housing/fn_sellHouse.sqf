@@ -78,3 +78,4 @@ if (_action) then {
     };
     _house setVariable ["containers",nil,true];
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

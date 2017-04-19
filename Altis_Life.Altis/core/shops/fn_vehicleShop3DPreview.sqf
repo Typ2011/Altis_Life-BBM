@@ -53,3 +53,4 @@ if (_classView != "" && {isClass (configFile >> "CfgVehicles" >> _classView) && 
         life_preview_3D_vehicle_object = _object;
     };
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

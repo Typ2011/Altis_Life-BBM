@@ -23,3 +23,4 @@ if (life_HC_isActive) then {
 } else {
     [(_data select 0)] remoteExecCall ["life_fnc_wantedRemove",RSERV];
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

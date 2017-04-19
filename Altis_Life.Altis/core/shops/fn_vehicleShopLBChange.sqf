@@ -109,4 +109,6 @@ if !((lbSize _ctrl)-1 isEqualTo -1) then {
     ctrlShow[2304,false];
 };
 
+[] call life_fnc_hudUpdate; //Request update of hud.
+
 true;

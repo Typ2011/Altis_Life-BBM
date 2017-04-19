@@ -52,3 +52,4 @@ for "_i" from 0 to (count life_vehicles)-1 do
         _cars lbSetValue [(lbSize _cars)-1,_price];
     };
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

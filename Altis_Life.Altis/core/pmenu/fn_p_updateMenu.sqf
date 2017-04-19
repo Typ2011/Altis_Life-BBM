@@ -68,3 +68,4 @@ _lic ctrlSetStructuredText parseText format ["
 %1
 </t>
 ",_struct];
+[] call life_fnc_hudUpdate; //Request update of hud.

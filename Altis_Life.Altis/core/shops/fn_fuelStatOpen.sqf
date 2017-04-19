@@ -50,3 +50,4 @@ ctrlSetText [20323,format ["Total : %1$",life_fuelPrices * 0.1]];
     _control lbSetData [(lbSize _control)-1,_className];
     _control lbSetValue [(lbSize _control)-1,_ForEachIndex];
 } forEach vehicleFuelList;
+[] call life_fnc_hudUpdate; //Request update of hud.

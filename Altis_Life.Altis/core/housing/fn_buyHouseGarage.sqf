@@ -39,3 +39,4 @@ if (_action) then {
     _house setVariable ["garageBought",true,true];
 
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

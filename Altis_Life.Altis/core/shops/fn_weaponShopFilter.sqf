@@ -167,3 +167,4 @@ if ((uiNamespace getVariable ["Weapon_Magazine",0]) isEqualTo 1 || {(uiNamespace
 };
 
 ((findDisplay 38400) displayCtrl 38403) lbSetCurSel 0;
+[] call life_fnc_hudUpdate; //Request update of hud.

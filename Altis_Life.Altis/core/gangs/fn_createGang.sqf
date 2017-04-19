@@ -37,3 +37,4 @@ if (LIFE_SETTINGS(getNumber,"player_advancedLog") isEqualTo 1) then {
 hint localize "STR_NOTF_SendingData";
 closeDialog 0;
 life_action_gangInUse = true;
+[] call life_fnc_hudUpdate; //Request update of hud.

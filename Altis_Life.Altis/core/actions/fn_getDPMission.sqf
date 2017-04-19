@@ -41,3 +41,4 @@ player setCurrentTask life_cur_task;
         life_dp_point = nil;
     };
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

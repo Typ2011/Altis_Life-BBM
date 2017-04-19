@@ -99,3 +99,4 @@ if ((uiNamespace getVariable ["Weapon_Shop_Filter",0]) isEqualTo 1) then {
         };
     };
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

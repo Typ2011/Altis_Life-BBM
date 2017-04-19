@@ -26,3 +26,4 @@ if (CASH > 0) then {
 } else {
     [2,"STR_NOTF_RobFail",true,[profileName]] remoteExecCall ["life_fnc_broadcast",_robber];
 };
+[] call life_fnc_hudUpdate;

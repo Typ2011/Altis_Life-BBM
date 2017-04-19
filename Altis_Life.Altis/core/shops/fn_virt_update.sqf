@@ -48,3 +48,4 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
         };
     };
 } forEach _shopItems;
+[] call life_fnc_hudUpdate; //Request update of hud.

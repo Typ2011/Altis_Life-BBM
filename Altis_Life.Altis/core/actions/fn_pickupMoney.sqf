@@ -35,3 +35,4 @@ if (!isNil "_value") exitWith {
     publicVariableServer "money_log";
     };
 };
+[] call life_fnc_hudUpdate; //Request update of hud.

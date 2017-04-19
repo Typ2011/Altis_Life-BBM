@@ -17,3 +17,4 @@ _price = _control lbValue _selection;
 
 _priceTag = ((findDisplay 39400) displayCtrl 39401);
 _priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>" +(localize "STR_GNOTF_Price")+ "<t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
+[] call life_fnc_hudUpdate; //Request update of hud.
