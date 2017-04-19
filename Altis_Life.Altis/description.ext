@@ -24,6 +24,7 @@ class RscTitles {
 
 class CfgFunctions {
     #include "Functions.hpp"
+	#include "cation\cation_functions.cpp"
 };
 
 class CfgSounds {
@@ -171,3 +172,4 @@ class CfgNotifications {
         priority = 5;
     };
 };
+#include "cation\cation_master.cpp"
