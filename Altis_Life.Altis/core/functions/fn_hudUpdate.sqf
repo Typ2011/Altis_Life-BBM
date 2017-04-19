@@ -23,7 +23,7 @@ _mediconline = 0;
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2402) ctrlSetText format["%1 %",life_thirst];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2407) ctrlSetText format["%1€",[life_atmbank] call life_fnc_numberText];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2408) ctrlSetText format["%1€",[life_cash] call life_fnc_numberText];
-((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2401) ctrlSetText format["%1:%2",Amyf_zeit select 0,Amyf_zeit select 1];
+((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2401) ctrlSetText format["%1:%2",_Amyf_zeit select 0,_Amyf_zeit select 1];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2405) ctrlSetText format["%1",_polizeionline];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2406) ctrlSetText format["%1",_mediconline];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 2404) ctrlSetText format["%1",_einwohneronline];

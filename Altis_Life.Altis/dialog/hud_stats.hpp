@@ -28,7 +28,7 @@ class playerHUD {
 	class Hintergrund: life_RscPicture
 	{
 		idc = 1200;
-		text = "texturen\hud.paa";
+		text = "textures\hud.paa";
 		x = 0.559572 * safezoneW + safezoneX;
 		y = 0.60116 * safezoneH + safezoneY;
 		w = 0.441158 * safezoneW;
