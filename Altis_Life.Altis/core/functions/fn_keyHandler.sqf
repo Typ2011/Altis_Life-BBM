@@ -245,6 +245,17 @@ switch (_code) do {
 		 case 70: {hint composeText [ image "icons\sound_new.paa"," Normaler Sound"]; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
 		 };
 	 };
+	 
+	// O, gate opener
+        case 24:
+		{
+
+			if(playerSide in [west,independent,east] && vehicle 
+			player != player && ((driver vehicle player) == player)) then 
+			{
+				[] call life_fnc_Opener;
+			};
+		};
 	
     //U Key
     case 22: {
