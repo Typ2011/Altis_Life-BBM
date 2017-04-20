@@ -235,6 +235,17 @@ switch (_code) do {
         };
     };
 
+	//Earplugs END
+	case 207:
+	 {
+		 switch (player getVariable["Earplugs",0]) do {
+		 case 0: {hint composeText [ image "icons\sound.paa"," 90% Leiser"]; 1 fadeSound 0.1; player setVariable ["Earplugs", 10]; };
+		 case 10: {hint composeText [ image "icons\sound.paa"," 60% Leiser"]; 1 fadeSound 0.4; player setVariable ["Earplugs", 40]; };
+		 case 40: {hint composeText [ image "icons\sound.paa"," 30% Leiser"]; 1 fadeSound 0.7; player setVariable ["Earplugs", 70]; };
+		 case 70: {hint composeText [ image "icons\sound_new.paa"," Normaler Sound"]; 1 fadeSound 1; player setVariable ["Earplugs", 0]; };
+		 };
+	 };
+	
     //U Key
     case 22: {
         if (!_alt && !_ctrlKey) then {
