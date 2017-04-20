@@ -21,7 +21,6 @@ class playerHUD {
             w = 0.403254 * safezoneW;
             h = 0.053703 * safezoneH;
             ColorBackground[] = {0.654901,0.262745,0.184313,1};
-            ColorText[] = {0,0,0,1};
         };
         class LebenBild: life_RscPicture
         {
@@ -32,7 +31,6 @@ class playerHUD {
             w = 0.015332 * safezoneW;
             h = 0.029703 * safezoneH;
             ColorBackground[] = {0.658823,0.266666,0.188235,1};
-            ColorText[] = {0,0,0,1};
         };
         class Leben: life_RscText
         {
@@ -54,7 +52,6 @@ class playerHUD {
             w = 0.015625 * safezoneW;
             h = 0.033481 * safezoneH;
             ColorBackground[] = {0.658823,0.266666,0.188235,1};
-            ColorText[] = {0,0,0,1};
         };
         class Bargeld: life_RscText
         {
@@ -76,7 +73,6 @@ class playerHUD {
             w = 0.021454 * safezoneW;
             h = 0.037036 * safezoneH;
             ColorBackground[] = {0.658823,0.266666,0.188235,1};
-            ColorText[] = {0,0,0,1};
         };
         class Essen: life_RscText
         {
@@ -98,7 +94,6 @@ class playerHUD {
             w = 0.028065 * safezoneW;
             h = 0.045416 * safezoneH;
             ColorBackground[] = {0.658823,0.266666,0.188235,1};
-            ColorText[] = {0,0,0,1};
         };
         class Trinken: life_RscText
         {
