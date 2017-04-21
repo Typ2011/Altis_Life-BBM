@@ -47,7 +47,11 @@ if (_requiredItem != "") then {
     };
 };
 
+//
+/* Author Shinji */
+while{true} do {
 if (_exit) exitWith {life_action_inUse = false;};
+if(life_interrupted) exitWith {life_interrupted = false;};
 
 _amount = round(random(_maxGather)) + 1;
 _diff = [_resource,_amount,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
@@ -73,4 +77,6 @@ if ([true,_resource,_diff] call life_fnc_handleInv) then {
 };
 
 sleep 1;
+};
 life_action_inUse = false;
+

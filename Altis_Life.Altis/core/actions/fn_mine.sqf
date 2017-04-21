@@ -81,6 +81,9 @@ if (_exit) exitWith {
     life_action_inUse = false;
 };
 
+/* Author Shinji */
+while {true} do {
+if(life_interrupted) exitWith {life_interrupted = false;};
 _amount = round(random(_maxGather)) + 1;
 _diff = [_mined, _amount, life_carryWeight, life_maxWeight] call life_fnc_calWeightDiff;
 if (_diff isEqualTo 0) exitWith {
@@ -103,4 +106,5 @@ if (([true, _mined, _diff] call life_fnc_handleInv)) then {
 };
 
 sleep 2.5;
+};
 life_action_inUse = false;
