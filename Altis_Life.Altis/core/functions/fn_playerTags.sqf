@@ -6,6 +6,7 @@
     Description:
     Adds the tags above other players heads when close and have visible range.
 */
+/*
 if (!life_settings_tagson) exitWith {};
 private ["_ui","_units","_masks"];
 #define iconID 78000
@@ -86,3 +87,4 @@ private _index = -1;
     _index = _forEachIndex;
 } forEach _units;
 (_ui displayCtrl (iconID + _index + 1)) ctrlSetStructuredText parseText "";
+*/
