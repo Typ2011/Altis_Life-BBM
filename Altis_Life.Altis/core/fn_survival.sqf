@@ -109,21 +109,7 @@ for "_i" from 0 to 1 step 0 do {
 	//Invisible Backpacks
 	[] spawn
 	{
-		private["_bp","_load","_cfg"];
-		while{true} do
-		{
-			waitUntil {backpack player != ""};
-			_bp = backpack player;
-			_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
-			_load = round(_cfg / 8);
-			life_maxWeight = life_maxWeightT + _load;
 			if(playerSide isEqualTo west) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // <---- Sac invisible chez les flics
 			if(playerSide isEqualTo independent) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // <----- Sac Invisible chez les Medics
-			waitUntil {backpack player != _bp};
-			if(backpack player isEqualTo "") then 
-			{
-				life_maxWeight = life_maxWeightT;
-			};
-		};
 	};
 };
