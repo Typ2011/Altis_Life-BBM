@@ -97,4 +97,13 @@ switch(_type) do{
  hint format["A message sent to all admins: %1",_msg];
  closeDialog 887890;
  };
+ //policeMsgAll 
+ case 8: { if((FETCH_CONST(life_coplevel) < 2)) exitWith {hint "Du bist dazu nicht berechtigt!";
+};
+ if(_msg == "") exitWith {hint "Du musst eine Nachricht eingeben!";
+ };
+[ObjNull,_msg,player,6] remoteExec ["TON_fnc_handleMessages",2];
+ hint format["gesendete Rundfunknachricht: %1",_msg];
+ closeDialog 887890;
+ };
 };
