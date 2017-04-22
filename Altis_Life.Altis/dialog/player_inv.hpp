@@ -294,7 +294,7 @@ class playerSettings {
 
         class ButtonCell: Life_RscButtonMenu {
             idc = 2014;
-            onButtonClick = "createDialog ""Life_cell_phone"";";
+            onButtonClick = "createDialog ""Life_my_smartphone"";"
 			x = 0.642708333333333 * safezoneW + safezoneX;
 			y = 0.714847590953786 * safezoneH + safezoneY;
 			w = 0.0369791666666667 * safezoneW;

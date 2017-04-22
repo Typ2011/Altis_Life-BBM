@@ -110,6 +110,8 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+		F(TON_fnc_handleMessages,SERVER)
+		F(TON_fnc_msgRequest,SERVER)
 		#include "cation\cation_remoteExec.cpp"
 
         /* HeadlessClient only functions */
