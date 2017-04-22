@@ -223,18 +223,26 @@ switch (_code) do {
     };
 
     //O Key
-    case 24: {
-        if (_shift) then {
-            if !(soundVolume isEqualTo 1) then {
-                1 fadeSound 1;
-                systemChat localize "STR_MISC_soundnormal";
-            } else {
-                1 fadeSound 0.1;
-                systemChat localize "STR_MISC_soundfade";
-            };
-        };
-    };
-
+    	case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+	};
+	/*
+	*case 24: {
+    *    if (_shift) then {
+    *        if !(soundVolume isEqualTo 1) then {
+    *            1 fadeSound 1;
+    *            systemChat localize "STR_MISC_soundnormal";
+    *        } else {
+    *            1 fadeSound 0.1;
+    *            systemChat localize "STR_MISC_soundfade";
+    *        };
+    *    };
+    *};
+	*/
+	
 	//Earplugs END
 	case 207:
 	 {
