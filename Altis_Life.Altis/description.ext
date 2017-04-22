@@ -172,5 +172,11 @@ class CfgNotifications {
         duration = 10;
         priority = 5;
     };
+	class PolizeiRundfunk {
+		title = "Polizei Rundfunk";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
 };
 #include "cation\cation_master.cpp"
