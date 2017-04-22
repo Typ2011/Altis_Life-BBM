@@ -22,3 +22,23 @@ _mediconline = 0;
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 5106) ctrlSetText format["%1 %",life_hunger];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 5108) ctrlSetText format["%1 %",life_thirst];
 ((uiNamespace getVariable ["playerHUD",displayNull]) displayCtrl 5104) ctrlSetText format["%1€",[life_cash] call life_fnc_numberText];
+
+//CopRadar
+if(playerSide == civilian) then  
+{  
+	if(wanted_status > 0) then  
+	{  
+		LIFEctrl(IDC_LIFE_BAR_WANTED) progressSetPosition (100);  
+		LIFEctrl(IDC_LIFE_BAR_CLEAR) progressSetPosition (0);  
+		//LIFEctrl(IDC_LIFE_WANTED_TEXT) ctrlSetText format["$%1", ([wanted_status] call life_fnc_numberText)];  
+		LIFEctrl(IDC_LIFE_WANTED_TEXT) ctrlSetText format["%1", "WANTED"];  
+		player setVariable ["isWanted", true, true];  
+	}  
+	else  
+	{  
+		LIFEctrl(IDC_LIFE_BAR_WANTED) progressSetPosition (0);  
+		LIFEctrl(IDC_LIFE_BAR_CLEAR) progressSetPosition (100);  
+		LIFEctrl(IDC_LIFE_WANTED_TEXT) ctrlSetText format["%1", "NOT WANTED"];  
+		player setVariable ["isWanted", false, true];  
+	};  
+}  
