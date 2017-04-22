@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","zipties" };
     };
 
     class med_market {
@@ -27,14 +27,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge","zipties" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge","zipties" };
     };
 
     class wongs {
@@ -55,7 +55,7 @@ class VirtualShops {
         name = "STR_Shop_Station_Coffee";
         side = "";
         conditions = "";
-        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelFull"};
+        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelFull","zipties"};
     };
 
     class drugdealer {
@@ -286,6 +286,17 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageBig.paa";
+    };
+	
+	class zipties {
+        variable = "zipties";
+        displayName = "STR_Item_ZipTies";
+        weight = 0;
+        buyPrice = 1200;
+        sellPrice = -1;
+        illegal = true;
+        edible = -1;
+        icon = "icons\ziptie.paa";
     };
 
     //Mined Items

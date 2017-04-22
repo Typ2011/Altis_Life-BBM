@@ -6672,6 +6672,10 @@
             <Portuguese>Desfibrilador</Portuguese>
             <Polish>defibrylator</Polish>
         </Key>
+		<Key ID="STR_Item_ZipTies">
+			<Original>ZipTies</Original>
+			<German>Kabelbinder</German>
+		</Key>
         <Key ID="STR_Item_Toolkit">
             <Original>Toolkit</Original>
             <Czech>Toolkit</Czech>
