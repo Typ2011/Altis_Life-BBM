@@ -174,6 +174,7 @@ class CfgNotifications {
     };
 	class PolizeiRundfunk {
 		title = "Polizei Rundfunk";
+		iconPicture = "icons\ico_messagePolice.paa"; //Icon kann geändert werden, kein Icon = leere ""
 		description = "%1";
 		duration = 10;
 		priority = 5;
